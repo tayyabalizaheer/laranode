@@ -1,0 +1,16 @@
+.alert-list{
+    list-style-type: none;
+    position: fixed;
+    width: 50%;
+    right: 10px;
+    top: 20px;
+}
+.thumbnail{
+    width: 200px;
+}
+.thumbnail-sm {
+    width: 100px;
+}
+.thumbnail-xs {
+    width: 50px;
+}

@@ -1,0 +1,5 @@
+<% if ( validation?.hasOwnProperty(field)  && validation[field].length) { %>
+    <% validation[field].forEach(msg => { %>
+        <span class="text-danger"> <%= msg  %> </span>
+    <% }) %>
+<% } %>

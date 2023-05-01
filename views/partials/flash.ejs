@@ -1,0 +1,40 @@
+<ul class="alert-list">
+    <% if (error && error.length) { %>
+        <% error.forEach(msg => { %>
+            <li class="alert alert-dismissible alert-danger alert-block">
+                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                <strong> <%= msg  %>  </strong>
+            </li>
+        <% }) %>
+        
+    <% } %>
+
+    <% if (success && success.length) { %>
+        <% success.forEach(msg => { %>
+            <li class="alert alert-dismissible alert-success alert-block">
+                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                <strong> <%= msg  %>  </strong>
+            </li>
+        <% }) %>
+    <% } %>
+    
+     <% if (warning && warning.length) { %>
+        <% warning.forEach(msg => { %>
+            <li class="alert alert-dismissible alert-warning alert-block">
+                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                <strong> <%= msg  %>  </strong>
+            </li>
+        <% }) %>
+    <% } %>
+
+
+    <% if (info && info.length) { %>
+        <% info.forEach(msg => { %>
+            <li class="alert alert-dismissible alert-info alert-block">
+                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                <strong> <%= msg  %>  </strong>
+            </li>
+        <% }) %>
+    <% } %>
+    
+</ul>
